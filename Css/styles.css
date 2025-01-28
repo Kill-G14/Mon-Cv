@@ -1,12 +1,17 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: grey;
+    background-image: url("../Images/fond-lanterne.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    backdrop-filter: blur(5px);
 }
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 5fr;
     padding: 1rem;
     gap: 1rem;
 }
@@ -20,7 +25,8 @@ h1 {
     display: flex;
     flex-direction: column;
     border: 5px solid black;
-    
+    align-items: center;
+
 }
 
 .picture img {
