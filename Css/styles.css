@@ -13,8 +13,8 @@ body {
 }
 
 .custom-cursor {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background: url('https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/40/external-sword-game-development-xnimrodx-lineal-color-xnimrodx.png') no-repeat center;
     background-size: contain;
     position: absolute;
