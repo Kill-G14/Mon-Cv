@@ -17,7 +17,7 @@ body {
     gap: 1rem;
 }
 
-/* photo de profil */
+/* container left */
 
 h1 {
     text-align: center;
@@ -55,7 +55,7 @@ h3 {
     padding: 2px;
 }
 
-/* text top centre presentation */
+/* container right */
 
 .container-right {
     font-size: 1rem;
@@ -69,7 +69,8 @@ h2 {
     font-size: 2rem;
 }
 
-/* */
+
+
 
 @media screen and (max-width: 415px) {
     .container {
