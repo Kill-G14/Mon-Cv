@@ -8,7 +8,7 @@ body {
     backdrop-filter: blur(8px);
     font-family: 'Macondo', cursive, sans-serif;
     color: rgb(255, 253, 230);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .container {
@@ -52,7 +52,27 @@ h3 {
 
 .picture li {
     list-style-type: none;
-    padding: 2px;
+    padding: 10x;
+}
+
+.caracteristiquesInner {
+    display: flex;
+    flex-direction: column;
+}
+
+.languesInner {
+    display: flex;
+    flex-direction: column;
+}
+
+.atoutsInner {
+    display: flex;
+    flex-direction: column;
+}
+
+.interestsInner {
+    display: flex;
+    flex-direction: column;
 }
 
 /* container right */
@@ -72,12 +92,12 @@ h2 {
 
 .presentation {
     border: 3px solid rgb(114, 114, 114);
-    padding: 5px;
+    padding: 10px;
 }
 
 .enseignements {
     border: 3px solid rgb(114, 114, 114);
-    padding: 5px;
+    padding: 10px;
 }
 
 .enseignementsInner {
@@ -88,7 +108,7 @@ h2 {
 
 .experiences {
     border: 3px solid rgb(114, 114, 114);
-    padding: 5px;
+    padding: 10px;
 }
 
 .experiencesInner {
@@ -99,8 +119,12 @@ h2 {
 
 .competances {
     border: 3px solid rgb(114, 114, 114);
-    padding: 5px;
+    padding: 10px;
     text-align: center;
+}
+
+.competancesInner {
+
 }
 
 
