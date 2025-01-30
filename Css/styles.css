@@ -56,25 +56,11 @@ h3 {
     padding: 10x;
 }
 
-.caracteristiquesInner {
+.flexColumn {
     display: flex;
     flex-direction: column;
 }
 
-.languesInner {
-    display: flex;
-    flex-direction: column;
-}
-
-.atoutsInner {
-    display: flex;
-    flex-direction: column;
-}
-
-.interestsInner {
-    display: flex;
-    flex-direction: column;
-}
 
 /* container right */
 
@@ -101,7 +87,7 @@ h2 {
     padding: 10px;
 }
 
-.enseignementsInner {
+.GridInner {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
@@ -110,12 +96,6 @@ h2 {
 .experiences {
     border: 10px ridge rgb(114, 114, 114);
     padding: 10px;
-}
-
-.experiencesInner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
 }
 
 .competances {
