@@ -9,7 +9,7 @@ body {
     font-family: 'Macondo', cursive, sans-serif;
     color: rgb(255, 253, 230);
     font-size: 1.2rem;
-    cursor: url('https://img.icons8.com/external-febrian-hidayat-flat-febrian-hidayat/35/external-Sword-fantasy-and-rpg-febrian-hidayat-flat-febrian-hidayat.png') 0, auto;
+    cursor: url('../Images/icons8-sword-35.png') 0 0, auto;
 }
 
 body::before {
