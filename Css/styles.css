@@ -40,8 +40,10 @@ h1 {
 .container-left {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     border: 10px ridge rgb(114, 114, 114);
     align-items: center;
+    min-width: 300px;
 }
 
 .image-container {
@@ -108,6 +110,10 @@ h3 {
     flex-direction: column;
 }
 
+.langues {
+    margin-right: 10px;
+}
+
 .langues ul {
     list-style: none;
     padding: 0;
@@ -145,6 +151,7 @@ h3 {
     justify-content: space-between;
     padding: 10px;
     border: 10px ridge rgb(114, 114, 114);
+    gap: 10px;
 }
 
 h2 {
@@ -248,6 +255,16 @@ h2 {
 }
 
 
+
+@media screen and (min-width: 1200px) {
+    .container-left {
+        display: flex;
+        flex-direction: column;
+        border: 10px ridge rgb(114, 114, 114);
+        align-items: center;
+        min-width: 300px;
+    }
+}
 
 @media screen and (max-width: 850px) {
     .container {
