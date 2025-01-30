@@ -1,3 +1,21 @@
+@keyframes attackSwing {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(-5px, -5px) rotate(-10deg);
+    }
+    50% {
+        transform: translate(5px, 5px) rotate(10deg);
+    }
+    75% {
+        transform: translate(-5px, -5px) rotate(-10deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -9,7 +27,8 @@ body {
     font-family: 'Macondo', cursive, sans-serif;
     color: rgb(255, 253, 230);
     font-size: 1.2rem;
-    cursor: url('../Images/icons8-sword-35.png') 0 0, auto;
+    cursor: none;
+    transition: all 0.3s ease;
 }
 
 body::before {
@@ -21,6 +40,21 @@ body::before {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: -1;
+}
+
+.cursor-swing {
+    animation: attackSwing 0.3s ease;
+}
+
+.cursor-animation {
+    position: absolute;
+    pointer-events: none;
+    width: 30px;
+    height: 30px;
+    background: url('../Images/icons8-sword-35.png') no-repeat center center;
+    background-size: contain;
+    transform-origin: right bottom;
+    transition: transform 0.1s ease;
 }
 
 .container {
