@@ -9,7 +9,7 @@ body {
     font-family: 'Macondo', cursive, sans-serif;
     color: rgb(255, 253, 230);
     font-size: 1.2rem;
-    cursor: url('https://img.icons8.com/external-febrian-hidayat-outline-color-febrian-hidayat/30/external-Sword-fantasy-and-rpg-febrian-hidayat-outline-color-febrian-hidayat.png') 5 5, auto;
+    cursor: url('https://img.icons8.com/external-febrian-hidayat-flat-febrian-hidayat/35/external-Sword-fantasy-and-rpg-febrian-hidayat-flat-febrian-hidayat.png') 0, auto;
 }
 
 body::before {
@@ -36,18 +36,34 @@ h1 {
     text-align: center;
     font-size: 2rem;
 }
-.picture {
+
+.container-left {
     display: flex;
     flex-direction: column;
     border: 10px ridge rgb(114, 114, 114);
     align-items: center;
 }
 
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px ridge rgb(114, 114, 114);
+}
+
 .photo {
     width: 100%;
-    min-width: 150px;
-    max-width: 250px;
-    border: 10px ridge rgb(114, 114, 114);
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+    transform: scale(1.05);
 }
 
 h3 {
@@ -126,9 +142,9 @@ h3 {
 .container-right {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 10px;
     border: 10px ridge rgb(114, 114, 114);
-    gap: 0.5rem;
 }
 
 h2 {
