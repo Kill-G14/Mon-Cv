@@ -125,7 +125,56 @@ h2 {
 }
 
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 850px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        border: none; 
+    }
+    .photo{
+        border: 5px ridge rgb(114, 114, 114);
+    }
+
+    .container-right {
+        border: none;
+        padding: 0px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
     .container {
         grid-template-columns: 1fr;
         
@@ -144,5 +193,7 @@ h2 {
         font-size: 1rem;
     }
 }
+
+
 
 
