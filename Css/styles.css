@@ -12,6 +12,17 @@ body {
     cursor: url('https://img.icons8.com/external-febrian-hidayat-outline-color-febrian-hidayat/30/external-Sword-fantasy-and-rpg-febrian-hidayat-outline-color-febrian-hidayat.png') 5 5, auto;
 }
 
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -81,6 +92,34 @@ h3 {
     flex-direction: column;
 }
 
+.langues ul {
+    list-style: none;
+    padding: 0;
+}
+
+.langues li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.progress-bar {
+    width: 120px;
+    height: 14px;
+    background: #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.progress {
+    height: 100%;
+    background: rgb(255, 193, 7);
+    transition: width 0.5s ease-in-out;
+}
+
 
 /* container right */
 
@@ -119,10 +158,79 @@ h2 {
 }
 
 .competances {
-    border: 10px ridge rgb(114, 114, 114);
     padding: 10px;
+    border: 10px ridge rgb(114, 114, 114);
+}
+
+.competances h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.competances-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    grid-template-areas: 
+        "css javascript html"
+        "php mysql csharp";
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.competanceInner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
 }
+
+.competanceInner span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.competanceInner .progress-bar {
+    width: 100%;
+    max-width: 250px;
+    height: 14px;
+    background: #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.competanceInner .progress {
+    height: 100%;
+    background: rgb(255, 193, 7);
+    transition: width 0.5s ease-in-out;
+}
+
+.css {
+    grid-area: css;
+}
+
+.javascript {
+    grid-area: javascript;
+}
+
+.html {
+    grid-area: html;
+}
+
+.php {
+    grid-area: php;
+}
+
+.mysql {
+    grid-area: mysql;
+}
+
+.csharp {
+    grid-area: csharp;
+}
+
 
 
 @media screen and (max-width: 850px) {
