@@ -171,7 +171,7 @@ h3 {
 
 .progress {
     height: 100%;
-    background: rgb(255, 193, 7);
+    background: rgb(137, 146, 230);
     transition: width 0.5s ease-in-out;
 }
 
@@ -259,7 +259,7 @@ h2 {
 
 .competanceInner .progress {
     height: 100%;
-    background: rgb(255, 193, 7);
+    background: rgb(137, 146, 230);
     transition: width 0.5s ease-in-out;
 }
 
