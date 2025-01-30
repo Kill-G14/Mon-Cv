@@ -74,21 +74,21 @@ h3 {
     margin-right: 10px;
 }
 
-.caracteristiques a{
+.container-left a{
     text-decoration: none;
     text-decoration: underline;
     color: rgb(187, 187, 187);
 }
 
-.caracteristiques a:hover{
+.container-left a:hover{
     color: rgb(185, 255, 127);
 }
 
-.caracteristiques ul {
+.container-left ul {
     padding: 0px;
 }
 
-.caracteristiques li {
+.container-left li {
     list-style-type: none;
     padding: 10x;
     margin-left: 15px;
