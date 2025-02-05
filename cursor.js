@@ -1,7 +1,7 @@
 let currentImageIndex = 0;
 const images = [
-    'Images/Carte_k.jpg',
-    'Images/photo_K.jpg'
+    'images/molgo.jpg',
+    'images/killianGodmont.jpg'
 ]
 
 function changeImage() {
