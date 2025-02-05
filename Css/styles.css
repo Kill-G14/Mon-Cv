@@ -348,16 +348,23 @@ h2 {
 
 @media screen and (max-width: 650px) {
     .container {
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr;
         
     }
 }
 @media screen and (max-width: 550px) {
-    .container {
-        grid-template-columns: 1fr;
-        
+    .competances-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 20px;
+        grid-template-areas: 
+            "css javascript"
+            "php html"
+            "mysql csharp";
+        align-items: center;
+        margin-bottom: 1rem;
     }
-
 }
 
 
