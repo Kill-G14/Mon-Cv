@@ -1,372 +1,363 @@
 @keyframes attackSwing {
-    0% {
-        transform: translate(0, 0) rotate(0deg);
-    }
-    25% {
-        transform: translate(5px, 5px) rotate(30deg);
-    }
-    50% {
-        transform: translate(-5px, -5px) rotate(-30deg);
-    }
-    75% {
-        transform: translate(5px, 5px) rotate(10deg);
-    }
-    100% {
-        transform: translate(0, 0) rotate(0deg);
-    }
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(5px, 5px) rotate(30deg);
+  }
+  50% {
+    transform: translate(-5px, -5px) rotate(-30deg);
+  }
+  75% {
+    transform: translate(5px, 5px) rotate(10deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
-    background-image: url("../images/fond-lanterne.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    backdrop-filter: blur(8px);
-    font-family: 'Macondo', cursive, sans-serif;
-    color: rgb(255, 253, 230);
-    font-size: 1.2rem;
-    cursor: none;
-    transition: all 0.3s ease;
+  margin: 0px;
+  padding: 0px;
+  background-image: url("../images/fond-lanterne.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(8px);
+  font-family: "Macondo", cursive, sans-serif;
+  color: rgb(255, 253, 230);
+  font-size: 1.2rem;
+  cursor: none;
+  transition: all 0.3s ease;
 }
 
 body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: -1;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
 
 .cursor-swing {
-    animation: attackSwing 0.3s ease;
+  animation: attackSwing 0.3s ease;
 }
 
 .cursor-animation {
-    position: absolute;
-    pointer-events: none;
-    width: 30px;
-    height: 30px;
-    background: url('../images/icons8-sword-35.png') no-repeat center center;
-    background-size: contain;
-    transform-origin: right bottom;
-    transition: transform 0.1s ease;
+  position: absolute;
+  pointer-events: none;
+  width: 30px;
+  height: 30px;
+  background: url("../images/icons8-sword-35.png") no-repeat center center;
+  background-size: contain;
+  transform-origin: right bottom;
+  transition: transform 0.1s ease;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    gap: 0.5rem;
-    padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 0.5rem;
+  padding: 10px;
 }
 
 /* container left */
 
 h1 {
-    text-align: center;
-    font-size: 2rem;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .container-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 10px ridge rgb(114, 114, 114);
+  align-items: center;
+  min-width: 250px;
+  padding: 1rem;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px ridge rgb(114, 114, 114);
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+  transform: scale(1.05);
+}
+
+h3 {
+  width: 100%;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.container-left a {
+  text-decoration: none;
+  color: rgb(187, 187, 187);
+}
+
+.container-left a:hover {
+  color: rgb(185, 255, 127);
+}
+
+.container-left ul {
+  padding: 0px;
+}
+
+.container-left li {
+  list-style-type: none;
+  padding: 10x;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.picture ul {
+  padding: 0px;
+}
+
+.picture li {
+  list-style-type: none;
+  padding: 10x;
+}
+
+.flexColumn {
+  width: 100%;
+  margin-right: 10px;
+}
+
+.details {
+  width: 100%;
+  margin-right: 10px;
+}
+
+.langues {
+  width: 100%;
+  margin-right: 10px;
+}
+
+.langues ul {
+  list-style: none;
+  padding: 0;
+}
+
+.langues li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.progress-bar {
+  width: 120px;
+  height: 14px;
+  background: #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.progress {
+  height: 100%;
+  background: rgb(137, 146, 230);
+  transition: width 0.5s ease-in-out;
+}
+
+/* container right */
+
+.container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.presentation {
+  border: 10px ridge rgb(114, 114, 114);
+  padding: 10px;
+}
+
+.enseignements {
+  border: 10px ridge rgb(114, 114, 114);
+  padding: 10px;
+}
+
+.GridInner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.experiences {
+  border: 10px ridge rgb(114, 114, 114);
+  padding: 10px;
+}
+
+.competances {
+  padding: 10px;
+  border: 10px ridge rgb(114, 114, 114);
+}
+
+.competances h3 {
+  margin-bottom: 1rem;
+}
+
+.competances-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px;
+  grid-template-areas:
+    "css javascript html"
+    "php mysql csharp";
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.competanceInner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.competanceInner span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.competanceInner .progress-bar {
+  width: 100%;
+  max-width: 250px;
+  height: 14px;
+  background: #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.competanceInner .progress {
+  height: 100%;
+  background: rgb(137, 146, 230);
+  transition: width 0.5s ease-in-out;
+}
+
+.css {
+  grid-area: css;
+}
+
+.javascript {
+  grid-area: javascript;
+}
+
+.html {
+  grid-area: html;
+}
+
+.php {
+  grid-area: php;
+}
+
+.mysql {
+  grid-area: mysql;
+}
+
+.csharp {
+  grid-area: csharp;
+}
+
+@media screen and (min-width: 1200px) {
+  .container-left {
+    display: flex;
+    flex-direction: column;
+    border: 10px ridge rgb(114, 114, 114);
+    align-items: center;
+    min-width: 250px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    grid-template-columns: 1fr 2fr;
+    border: none;
+  }
+  .photo {
+    border: 5px ridge rgb(114, 114, 114);
+  }
+
+  .container-right {
+    border: none;
+    padding: 0px;
+  }
+  .container-left {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     border: 10px ridge rgb(114, 114, 114);
     align-items: center;
-    min-width: 250px;
-    padding: 1rem;
-}
-
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 10px ridge rgb(114, 114, 114);
-}
-
-.photo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    transition: transform 0.3s ease;
-}
-
-.image-container:hover {
-    transform: scale(1.05);
-}
-
-h3 {
-    width: 100%;
-    text-decoration: underline;
-    font-size: 1.5rem;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.container-left a{
-    text-decoration: none;
-    color: rgb(187, 187, 187);
-}
-
-.container-left a:hover{
-    color: rgb(185, 255, 127);
-}
-
-.container-left ul {
-    padding: 0px;
-}
-
-.container-left li {
-    list-style-type: none;
-    padding: 10x;
-    margin-left: 15px;
-    margin-bottom: 10px;
-}
-
-.picture ul {
-    padding: 0px;
-}
-
-.picture li {
-    list-style-type: none;
-    padding: 10x;
-}
-
-.flexColumn {
-    width: 100%;
-    margin-right: 10px;
-}
-
-.details {
-    width: 100%;
-    margin-right: 10px;
-}
-
-.langues {
-    width: 100%;
-    margin-right: 10px;
-}
-
-.langues ul {
-    list-style: none;
-    padding: 0;
-}
-
-.langues li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    margin-bottom: 8px;
-}
-
-.progress-bar {
-    width: 120px;
-    height: 14px;
-    background: #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    flex-shrink: 0;
-}
-
-.progress {
-    height: 100%;
-    background: rgb(137, 146, 230);
-    transition: width 0.5s ease-in-out;
-}
-
-
-/* container right */
-
-.container-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-h2 {
-    text-align: center;
-    font-size: 3rem;
-}
-
-.presentation {
-    border: 10px ridge rgb(114, 114, 114);
-    padding: 10px;
-}
-
-.enseignements {
-    border: 10px ridge rgb(114, 114, 114);
-    padding: 10px;
-}
-
-.GridInner {
+  }
+  .GridInner {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
-}
+  }
 
-.experiences {
-    border: 10px ridge rgb(114, 114, 114);
-    padding: 10px;
-}
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
 
-.competances {
-    padding: 10px;
-    border: 10px ridge rgb(114, 114, 114);
-}
-
-.competances h3 {
-    margin-bottom: 1rem;
-}
-
-.competances-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 20px;
-    grid-template-areas: 
-        "css javascript html"
-        "php mysql csharp";
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.competanceInner {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-}
-
-.competanceInner span {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.competanceInner .progress-bar {
-    width: 100%;
-    max-width: 250px;
-    height: 14px;
-    background: #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.competanceInner .progress {
-    height: 100%;
-    background: rgb(137, 146, 230);
-    transition: width 0.5s ease-in-out;
-}
-
-.css {
-    grid-area: css;
-}
-
-.javascript {
-    grid-area: javascript;
-}
-
-.html {
-    grid-area: html;
-}
-
-.php {
-    grid-area: php;
-}
-
-.mysql {
-    grid-area: mysql;
-}
-
-.csharp {
-    grid-area: csharp;
-}
-
-
-
-@media screen and (min-width: 1200px) {
-    .container-left {
-        display: flex;
-        flex-direction: column;
-        border: 10px ridge rgb(114, 114, 114);
-        align-items: center;
-        min-width: 250px;
-    }
-}
-
-@media screen and (max-width: 850px) {
-    .container {
-        grid-template-columns: 1fr 2fr;
-        border: none; 
-    }
-    .photo{
-        border: 5px ridge rgb(114, 114, 114);
-    }
-
-    .container-right {
-        border: none;
-        padding: 0px;
-    }
-    .container-left {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        border: 10px ridge rgb(114, 114, 114);
-        align-items: center;
-    }
-    .GridInner {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-
-
-    h1 {
-        font-size: 1.5rem;
-    }
-    h2 {
-        font-size: 2rem;
-    }
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    body {
-        font-size: 1rem;
-    }
+  body {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 650px) {
-    .container {
-        grid-template-columns: 1fr;
-        
-    }
+  .container {
+    grid-template-columns: 1fr;
+  }
 }
 @media screen and (max-width: 550px) {
-    .competances-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-gap: 20px;
-        grid-template-areas: 
-            "css javascript"
-            "php html"
-            "mysql csharp";
-        align-items: center;
-        margin-bottom: 1rem;
-    }
+  .competances-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-template-areas:
+      "css javascript"
+      "php html"
+      "mysql csharp";
+    align-items: center;
+    margin-bottom: 1rem;
+  }
 }
-
-
-
-
