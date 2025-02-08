@@ -312,8 +312,7 @@ h2 {
 
   .container-right {
     border: none;
-    padding: 0px;
-  }
+    padding: 0px;  }
   .container-left {
     display: flex;
     flex-direction: column;
