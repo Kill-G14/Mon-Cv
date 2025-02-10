@@ -59,6 +59,8 @@ body::before {
 
 .container {
   display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
   grid-template-columns: 1fr 5fr;
   gap: 0.5rem;
   padding: 10px;
@@ -211,6 +213,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  margin-left: 1rem;
 }
 
 .experiences {
@@ -335,16 +338,20 @@ h2 {
   h3 {
     font-size: 1.5rem;
   }
-
-  body {
-    font-size: 1rem;
-  }
+  
 }
 
 @media screen and (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
   }
+  .langues li {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  margin-bottom: 8px;
+}
 }
 @media screen and (max-width: 550px) {
   .competances-grid {
