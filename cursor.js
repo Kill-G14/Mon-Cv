@@ -1,5 +1,5 @@
 let currentImageIndex = 0;
-const images = ["images/molgo.jpg", "images/killianGodmont.jpg"];
+const images = ["Images/molgo.jpg", "Images/killianGodmont.jpg"];
 
 function changeImage() {
   currentImageIndex = (currentImageIndex + 1) % images.length;

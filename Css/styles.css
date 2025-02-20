@@ -19,7 +19,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-image: url("../images/fond-lanterne.jpg");
+  background-image: url("../Images/fond-lanterne.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -51,7 +51,7 @@ body::before {
   pointer-events: none;
   width: 30px;
   height: 30px;
-  background: url("../images/icons8-sword-35.png") no-repeat center center;
+  background: url("../Images/icons8-sword-35.png") no-repeat center center;
   background-size: contain;
   transform-origin: right bottom;
   transition: transform 0.1s ease;
